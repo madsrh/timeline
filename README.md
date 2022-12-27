@@ -1,6 +1,11 @@
 # Timeline
 A simple timeline game build upon [jquery-sortablejs](https://github.com/SortableJS/jquery-sortablejs).
 
+Screenshot with dummy data:
+
+<img src="https://github.com/madsrh/timeline/blob/main/screenshot.png" width=50% height=50%>
+
+
 ## License
 
 MIT License
