@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<script>
+var text1="Vikings invade England.";
+var date1="Year 1000";
+var text2="Dinosauers rule the earth.";
+var date2="July 2019";
+var text3="Bigband.";
+var date3="December 1992";
+var text4="First computer.";
+var date4="September 1961";
+var text5="Black plauge.";
+var date5="Year 1243";
+var text6="Write another event here.";
+var date6="May 2015";
+var text7="Something more here.";
+var date7="January 2017";
+
+// Reference list
+const referenceList = ["set_7", "set_6", "set_5", "set_4", "set_3", "set_2", "set_1"];
+
+</script>
+
+
+<html>
+<head>
+	<link rel="icon" type="image/png" href="images/logo.png">
+	<title>Timeline</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="st/theme.css">
+	<link rel="stylesheet" type="text/css" href="st/carbon.css">
+
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta property="og:image" content="/st/og-image.png"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+</head>
+<body>
+
+
+
+	<div class="container">
+		<div class="text-center row header">
+
+	<!--		<img class="mx-auto d-block" src="st/og-image.png" style="max-width: 200px; max-height: 200px" />
+	-->
+			<h3 class="col-12 text-center"><img width="64px" src="images/logo.png">  </h3>
+			<h1 style="font-family: daniel;" class="col-12">Timeline</h1>
+
+
+
+		</div>
+
+
+<script>
+// show answer button
+function myFunction() {
+  // Select elements with the class "hidden"
+  var elements = document.getElementsByClassName("hidden");
+  // Loop through the elements and toggle their display
+  for (var i = 0; i < elements.length; i++) {
+    var element = elements[i];
+      element.style.display = "block";
+  }
+	// Select elements with the class "hidden"
+var centers = document.getElementsByClassName("center");
+
+// Loop through the elements and set their display to "block"
+for (var i = 0; i < centers.length; i++) {
+  centers[i].style.display = "block";
+ }
+}
+</script>
+
+
+		<div id="simple-list" class="row">
+	  <h5 class="col-12">Put the events in order</h5>
+
+	  <div id="example1" class="list-group col">
+	    <div id="set_1" class="list-group-item">
+				<div class="column">
+					<img class="image" src="images/henrik.jpg">
+				</div>
+				<div class="column center">
+					<div class="hidden"><script>document.write(date1)</script></div>
+						<script>document.write(text1)</script>
+				</div></div>
+	    <div id="set_2" class="list-group-item">
+				<div class="column">
+					<img class="image" src="images/carstenoglene.jpg">
+				</div>
+				<div class="column center">
+					<div class="hidden"><script>document.write(date2)</script></div>
+					  <script>document.write(text2)</script>
+				</div></div>
+	    <div id="set_3" class="list-group-item">
+				<div class="column">
+					<img class="image" src="images/annemarie.jpg">
+				</div>
+				<div class="column center">
+					<div class="hidden"><script>document.write(date3)</script></div>
+					<script>document.write(text3)</script>
+				</div></div>
+	    <div id="set_4" class="list-group-item">
+				<div class="column">
+					<img class="image" src="images/40aar.jpg">
+				</div>
+				<div class="column center">
+					<div class="hidden"><script>document.write(date4)</script></div>
+					<script>document.write(text4)</script>
+				</div></div>
+	    <div id="set_5" class="list-group-item">
+				<div class="column">
+					<img class="image" src="images/jaaiil.jpg">
+				</div>
+				<div class="column center">
+					<div class="hidden"><script>document.write(date5)</script></div>
+					<script>document.write(text5)</script>
+				</div></div>
+	    <div id="set_6" class="list-group-item">
+				<div class="column">
+					<img class="image" src="images/lundbakvej.jpg">
+				</div>
+				<div class="column center">
+					<div class="hidden"><script>document.write(date6)</script></div>
+					<script>document.write(text6)</script>
+				</div></div>
+	    <div id="set_7" class="list-group-item">
+				<div class="column">
+					<img class="image" src="images/tinghuset.jpg">
+				</div>
+				<div class="column center">
+					<div class="hidden"><script>document.write(date7)</script></div>
+					<script>document.write(text7)</script>
+				</div></div>
+	  </div>
+	</div>
+
+     <p><span id="counter"> </span></p>
+
+	<div class="button">
+			<button onclick="myFunction()">Show answer</button>
+	</div>
+
+
+
+
+
+
+
+
+	<script>
+
+	  // Make the list sortable
+	  const listGroup = document.getElementById("example1");
+	  listGroup.addEventListener("dragstart", function(event) {
+	    event.dataTransfer.setData("text/plain", event.target.id);
+	    event.target.classList.add("dragging");
+	  });
+	  listGroup.addEventListener("dragover", function(event) {
+	    event.preventDefault();
+	  });
+	  listGroup.addEventListener("drop", function(event) {
+	    event.preventDefault();
+	    const draggableElement = document.getElementById(event.dataTransfer.getData("text"));
+	    const dropTarget = event.target;
+	    dropTarget.parentNode.insertBefore(draggableElement, dropTarget);
+
+
+	  });
+	  listGroup.addEventListener("dragend", function(event) {
+
+			// Check the order of the list against the reference list
+			const sortedList = listGroup.children;
+			let correctCount = 0;
+	for (let i = 0; i < sortedList.length; i++) {
+	  if (sortedList[i].id === referenceList[i]) {
+	    correctCount++;
+	  }
+	}
+ //	alert(`${correctCount} items are in the correct place.`);
+ // Update span with ID count to display the correct count
+ const countSpan = document.getElementById("counter");
+  countSpan.innerHTML = `${correctCount} correctly placed event.`;
+
+	if (correctCount === referenceList.length) {
+	  alert("All items are in the correct place!");
+	}
+
+	    event.target.classList.remove("dragging");
+	  });
+		// Add draggable attribute to list items
+   const listItems = listGroup.children;
+   for (let i = 0; i < listItems.length; i++) {
+     listItems[i].setAttribute("draggable", "true");
+   }
+ </script>
+
+
+
+
+
+
+	<!-- Latest Sortable -->
+	<script src="./Sortable.js"></script>
+
+	<script type="text/javascript" src="st/prettify/prettify.js"></script>
+	<script type="text/javascript" src="st/prettify/run_prettify.js"></script>
+
+	<script src="st/app.js"></script>
+</body>
+</html>
