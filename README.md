@@ -3,7 +3,7 @@ A simple timeline game build upon [jquery-sortablejs](https://github.com/Sortabl
 
 Screenshot with dummy data:
 
-<img src="https://github.com/madsrh/timeline/blob/main/screenshot.png" width=50% height=50%>
+<img src="https://raw.githubusercontent.com/madsrh/timeline/da06f749466ca7d4ce2f6862f9ae8ca4d3471bec/screenshot.png" width=100% height=100%>
 
 
 ## License
