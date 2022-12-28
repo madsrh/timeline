@@ -1,22 +1,30 @@
 <!DOCTYPE html>
 <script>
-var text1="Vikings invade England.";
-var date1="Year 1000";
-var text2="Dinosauers rule the earth.";
-var date2="July 2019";
-var text3="Bigband.";
-var date3="December 1992";
-var text4="First computer.";
-var date4="September 1961";
-var text5="Black plauge.";
-var date5="Year 1243";
-var text6="Write another event here.";
-var date6="May 2015";
-var text7="Something more here.";
-var date7="January 2017";
+var text1="Henrik Hammer starter som kulturskoleleder.";
+var date1="Aug 2016";
+var text2="Carsten og Lene har 40 års jubilæum.";
+var date2="Juli 2019";
+var text3="AnneMarie begynder som elev i kulturskole.";
+var date3="Dec 1992";
+var text4="Skolen fejre 40 års jubilæum.";
+var date4="Sep 2018";
+var text5="JAIIL deltager i DR's MGP.";
+var date5="Feb 2020";
+var text6="Kulturskolen flytter fra Lundbakvej til Søparken.";
+var date6="Aug 2015";
+var text7="Kulturskolen får nye lokaler i Tinghuset i Fjerritslev.";
+var date7="Jan 2017";
 
 // Reference list
 const referenceList = ["set_7", "set_6", "set_5", "set_4", "set_3", "set_2", "set_1"];
+
+
+// Highscore code
+var name=window.prompt("Skriv dit navn:");
+//	window.alert("Welcome, "+name);
+var startTime, endTime;
+	startTime = new Date();
+
 
 </script>
 
@@ -38,46 +46,29 @@ const referenceList = ["set_7", "set_6", "set_5", "set_4", "set_3", "set_2", "se
 <body>
 
 
+<div class="container">
 
-	<div class="container">
-		<div class="text-center row header">
+	<div class="text-center header">
+		<img class="mx-auto d-block" src="images/logo.png" style="max-width: 150px; max-height: 150px" />
+		<h1 class="col-12 teaser">Timeline</h1>
+	</div>
 
-	<!--		<img class="mx-auto d-block" src="st/og-image.png" style="max-width: 200px; max-height: 200px" />
-	-->
-			<h3 class="col-12 text-center"><img width="64px" src="images/logo.png">  </h3>
-			<h1 style="font-family: daniel;" class="col-12">Timeline</h1>
+			<div id="simple-list" class="row">
+		  <h5 class="col-12 teaser text-center">Sæt begivenhederne i korrekt rækkefølge</h5>
 
+<div  style="width:100%;">
 
-
-		</div>
-
-
-<script>
-// show answer button
-function myFunction() {
-  // Select elements with the class "hidden"
-  var elements = document.getElementsByClassName("hidden");
-  // Loop through the elements and toggle their display
-  for (var i = 0; i < elements.length; i++) {
-    var element = elements[i];
-      element.style.display = "block";
-  }
-	// Select elements with the class "hidden"
-var centers = document.getElementsByClassName("center");
-
-// Loop through the elements and set their display to "block"
-for (var i = 0; i < centers.length; i++) {
-  centers[i].style.display = "block";
- }
-}
-</script>
+				 <div class="button">
+			 	 	<button onclick="myFunction()">Vis svar</button>
+			  </div>
+</div>
+</div>
 
 
-		<div id="simple-list" class="row">
-	  <h5 class="col-12">Put the events in order</h5>
 
-	  <div id="example1" class="list-group col">
-	    <div id="set_1" class="list-group-item">
+	<div id="example1" class="list-group col">
+
+			<div id="set_1" class="list-group-item">
 				<div class="column">
 					<img class="image" src="images/henrik.jpg">
 				</div>
@@ -85,15 +76,15 @@ for (var i = 0; i < centers.length; i++) {
 					<div class="hidden"><script>document.write(date1)</script></div>
 						<script>document.write(text1)</script>
 				</div></div>
-	    <div id="set_2" class="list-group-item">
+			<div id="set_2" class="list-group-item">
 				<div class="column">
 					<img class="image" src="images/carstenoglene.jpg">
 				</div>
 				<div class="column center">
 					<div class="hidden"><script>document.write(date2)</script></div>
-					  <script>document.write(text2)</script>
+						<script>document.write(text2)</script>
 				</div></div>
-	    <div id="set_3" class="list-group-item">
+			<div id="set_3" class="list-group-item">
 				<div class="column">
 					<img class="image" src="images/annemarie.jpg">
 				</div>
@@ -101,7 +92,7 @@ for (var i = 0; i < centers.length; i++) {
 					<div class="hidden"><script>document.write(date3)</script></div>
 					<script>document.write(text3)</script>
 				</div></div>
-	    <div id="set_4" class="list-group-item">
+			<div id="set_4" class="list-group-item">
 				<div class="column">
 					<img class="image" src="images/40aar.jpg">
 				</div>
@@ -109,7 +100,7 @@ for (var i = 0; i < centers.length; i++) {
 					<div class="hidden"><script>document.write(date4)</script></div>
 					<script>document.write(text4)</script>
 				</div></div>
-	    <div id="set_5" class="list-group-item">
+			<div id="set_5" class="list-group-item">
 				<div class="column">
 					<img class="image" src="images/jaaiil.jpg">
 				</div>
@@ -117,7 +108,7 @@ for (var i = 0; i < centers.length; i++) {
 					<div class="hidden"><script>document.write(date5)</script></div>
 					<script>document.write(text5)</script>
 				</div></div>
-	    <div id="set_6" class="list-group-item">
+			<div id="set_6" class="list-group-item">
 				<div class="column">
 					<img class="image" src="images/lundbakvej.jpg">
 				</div>
@@ -125,26 +116,41 @@ for (var i = 0; i < centers.length; i++) {
 					<div class="hidden"><script>document.write(date6)</script></div>
 					<script>document.write(text6)</script>
 				</div></div>
-	    <div id="set_7" class="list-group-item">
+			<div id="set_7" class="list-group-item">
 				<div class="column">
 					<img class="image" src="images/tinghuset.jpg">
 				</div>
 				<div class="column center">
 					<div class="hidden"><script>document.write(date7)</script></div>
 					<script>document.write(text7)</script>
-				</div></div>
-	  </div>
+				</div>
+			</div>
+		</div>  <center><p><span class="gray" id="counter"> </span></p></center>
 	</div>
-
-     <p><span id="counter"> </span></p>
-
-	<div class="button">
-			<button onclick="myFunction()">Show answer</button>
-	</div>
+</div>
 
 
 
+		<script>
 
+		// show answer button
+		function myFunction() {
+		  // Select elements with the class "hidden"
+		  var elements = document.getElementsByClassName("hidden");
+		  // Loop through the elements and toggle their display
+		  for (var i = 0; i < elements.length; i++) {
+		    var element = elements[i];
+		      element.style.display = "block";
+		  }
+			// Select elements with the class "hidden"
+		var centers = document.getElementsByClassName("center");
+
+		// Loop through the elements and set their display to "block"
+		for (var i = 0; i < centers.length; i++) {
+		  centers[i].style.display = "block";
+		 }
+		}
+		</script>
 
 
 
@@ -177,16 +183,39 @@ for (var i = 0; i < centers.length; i++) {
 	  if (sortedList[i].id === referenceList[i]) {
 	    correctCount++;
 	  }
+      // if ref list id is the same as sortlist id add css class
+		 if (sortedList[i].id == referenceList[i]) {
+			const cssId = sortedList[i].id;
+			const css = document.getElementById(cssId);
+			css.classList.add("correct");
+		 }
+		 if (sortedList[i].id != referenceList[i]) {
+			const cssId = sortedList[i].id;
+			const css = document.getElementById(cssId);
+			css.classList.remove("correct");
+		 }
 	}
  //	alert(`${correctCount} items are in the correct place.`);
  // Update span with ID count to display the correct count
  const countSpan = document.getElementById("counter");
-  countSpan.innerHTML = `${correctCount} correctly placed event.`;
+  countSpan.innerHTML = `${correctCount} begivenhed er placeret korrekt på tidslinjen.`;
+  	if (correctCount !== 1) {
+ countSpan.innerHTML = `${correctCount} begivenheder er placeret korrekt på tidslinjen.`; // more than one or zero
+}
 
 	if (correctCount === referenceList.length) {
-	  alert("All items are in the correct place!");
-	}
+	//  alert("All items are in the correct place!");
 
+			endTime = new Date();
+			var timeDiff = endTime - startTime; //in ms
+			// strip the ms
+			timeDiff /= 1000;
+
+			// get seconds
+			var seconds = Math.round(timeDiff);
+			myFunction()
+			alert(seconds + " sekunder! Flot "+name);
+	}
 	    event.target.classList.remove("dragging");
 	  });
 		// Add draggable attribute to list items
