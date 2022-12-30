@@ -64,6 +64,7 @@ h5 { color: #5daef1; font-style: italic; text-transform: uppercase; }
 	 margin: 14px;
 	 border-radius: 8px;
 	 height: 230px;
+	 width: 174px;
 	   box-shadow: 3px 3px 10px rgb(0 0 0 / 0.3);
 	/* display: flex; */
  }
