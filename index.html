@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <script>
-var text1="Henrik Hammer starter som kulturskoleleder.";
-var date1="Aug 2016";
-var text2="Carsten og Lene har 40 års jubilæum.";
-var date2="Juli 2019";
-var text3="AnneMarie begynder som elev i kulturskole.";
-var date3="Dec 1992";
-var text4="Skolen fejre 40 års jubilæum.";
-var date4="Sep 2018";
-var text5="JAIIL deltager i DR's MGP.";
-var date5="Feb 2020";
-var text6="Kulturskolen flytter fra Lundbakvej til Søparken.";
+var text1="Russian invasion of Ukraine.";
+var date1="Feb 2022";
+var text2="Coronavirus pandemic.";
+var date2="Dec 2019";
+var text3="Donald Trump is elected President.";
+var date3="Nov 2016";
+var text4="Microsoft releses Windows 7.";
+var date4="Oct 2008";
+var text5="First release of the iPhone.";
+var date5="Jun 2007";
+var text6="11. september.";
 var date6="Aug 2015";
-var text7="Kulturskolen får nye lokaler i Tinghuset i Fjerritslev.";
-var date7="Jan 2017";
+var text7="Netflix is founded.";
+var date7="Sep 1997";
 
 // Reference list
 const referenceList = ["set_7", "set_6", "set_5", "set_4", "set_3", "set_2", "set_1"];
 
 
 // Highscore code
-// var name=window.prompt("Skriv dit navn:");
+ var name=window.prompt("Enter your name:");
 //	window.alert("Welcome, "+name);
 var startTime, endTime;
 	startTime = new Date();
@@ -54,12 +54,12 @@ var startTime, endTime;
 	</div>
 
 			<div id="simple-list" class="row">
-		  <h5 class="col-12 teaser text-center">Sæt begivenhederne i korrekt rækkefølge</h5>
+		  <h5 class="col-12 teaser text-center">Put the events in the correct order</h5>
 
 <div  style="width:100%;">
 
 				 <div class="button">
-			 	 	<button onclick="myFunction()">Vis svar</button>
+			 	 	<button onclick="myFunction()">Show answers</button>
 			  </div>
 </div>
 </div>
@@ -70,7 +70,7 @@ var startTime, endTime;
 
 			<div id="set_1" class="list-group-item">
 				<div class="column">
-					<img class="image" src="images/henrik.jpg">
+					<img class="image" src="images/date1.jpg">
 				</div>
 				<div class="column center">
 					<div class="hidden"><script>document.write(date1)</script></div>
@@ -78,7 +78,7 @@ var startTime, endTime;
 				</div></div>
 			<div id="set_2" class="list-group-item">
 				<div class="column">
-					<img class="image" src="images/carstenoglene.jpg">
+					<img class="image" src="images/date2.jpg">
 				</div>
 				<div class="column center">
 					<div class="hidden"><script>document.write(date2)</script></div>
@@ -86,7 +86,7 @@ var startTime, endTime;
 				</div></div>
 			<div id="set_3" class="list-group-item">
 				<div class="column">
-					<img class="image" src="images/annemarie.jpg">
+					<img class="image" src="images/date3.jpg">
 				</div>
 				<div class="column center">
 					<div class="hidden"><script>document.write(date3)</script></div>
@@ -94,7 +94,7 @@ var startTime, endTime;
 				</div></div>
 			<div id="set_4" class="list-group-item">
 				<div class="column">
-					<img class="image" src="images/40aar.jpg">
+					<img class="image" src="images/date4.jpg">
 				</div>
 				<div class="column center">
 					<div class="hidden"><script>document.write(date4)</script></div>
@@ -102,7 +102,7 @@ var startTime, endTime;
 				</div></div>
 			<div id="set_5" class="list-group-item">
 				<div class="column">
-					<img class="image" src="images/jaaiil.jpg">
+					<img class="image" src="images/date5.jpg">
 				</div>
 				<div class="column center">
 					<div class="hidden"><script>document.write(date5)</script></div>
@@ -110,7 +110,7 @@ var startTime, endTime;
 				</div></div>
 			<div id="set_6" class="list-group-item">
 				<div class="column">
-					<img class="image" src="images/lundbakvej.jpg">
+					<img class="image" src="images/date6.jpg">
 				</div>
 				<div class="column center">
 					<div class="hidden"><script>document.write(date6)</script></div>
@@ -118,7 +118,7 @@ var startTime, endTime;
 				</div></div>
 			<div id="set_7" class="list-group-item">
 				<div class="column">
-					<img class="image" src="images/tinghuset.jpg">
+					<img class="image" src="images/date7.jpg">
 				</div>
 				<div class="column center">
 					<div class="hidden"><script>document.write(date7)</script></div>
@@ -198,9 +198,9 @@ var startTime, endTime;
  //	alert(`${correctCount} items are in the correct place.`);
  // Update span with ID count to display the correct count
  const countSpan = document.getElementById("counter");
-  countSpan.innerHTML = `${correctCount} begivenhed er placeret korrekt på tidslinjen.`;
+  countSpan.innerHTML = `${correctCount} event is correctly placed on the timeline.`;
   	if (correctCount !== 1) {
- countSpan.innerHTML = `${correctCount} begivenheder er placeret korrekt på tidslinjen.`; // more than one or zero
+ countSpan.innerHTML = `${correctCount} events is correctly placed on the timeline.`; // more than one or zero
 }
 
 	if (correctCount === referenceList.length) {
